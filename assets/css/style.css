@@ -11,6 +11,15 @@
     box-sizing: border-box;
 }
 
+/* aplying flex to let content  have the largest space of height*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project style*/
+    color: #3a3a3a;
+}
+
 /*Header*/
 header {
     background-color: lightcoral;
@@ -19,6 +28,7 @@ header {
 /*Main*/
 main {
     background-color: aqua;
+    flex: 1 0 auto;
 }
 
 /*Footer*/
