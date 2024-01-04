@@ -1,0 +1,27 @@
+/* Astric to override all styles set by browser*/
+* {
+    padding: 0;
+    margin: 0;
+    /*And finally,
+        we'll set the box-sizing property for all our elements to
+     border-box,
+        so that later when we set the height or width to an element,
+            it will be applied to the entire element,
+            including the border.*/
+    box-sizing: border-box;
+}
+
+/*Header*/
+header {
+    background-color: lightcoral;
+}
+
+/*Main*/
+main {
+    background-color: aqua;
+}
+
+/*Footer*/
+footer {
+    background-color: blueviolet;
+}
