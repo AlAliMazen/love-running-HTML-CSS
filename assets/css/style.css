@@ -32,6 +32,9 @@ header {
     padding: 0 1.5rem;
     box-shadow: 0 2px 2px #3a3a3a;
     z-index: 99;/*to stay above all elements*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
 }
 
@@ -58,12 +61,37 @@ h1{
 .active{
     border-bottom:1px solid #3a3a3a
 }
+/*Styling the Nav and make it dropdown*/
+nav{
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/*Styling the dropdown menu using the pseudo class from checkbox*/
+#nav-toggle:checked~nav{
+    display: block;
+}
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size:2rem;
+}
 
 /*Main*/
 main {
     background-color: aqua;
     flex: 1 0 auto;
+    margin-top: 43px;
+
 }
+
 
 /*Footer*/
 footer {
