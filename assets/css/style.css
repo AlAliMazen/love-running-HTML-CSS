@@ -91,6 +91,16 @@ main {
     margin-top: 43px;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 
 /*Footer*/
 #social-network {
@@ -105,6 +115,13 @@ main {
     font-size: 160%;
     padding: 5px;
     color: #3a3a3a;
+}
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* MEDIA QUIRIES for larger screens*/
@@ -135,10 +152,18 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+     /* Gallery */
+     #photos {
+        column-count: 3;
+    }
 }
 
 @media screen and (min-width:992px){
         #menu a:hover{
             border-bottom: 1px solid #3a3a3a;
         }
+   /* Gallery */
+    #photos {
+        column-count: 4;
+    }
 }
