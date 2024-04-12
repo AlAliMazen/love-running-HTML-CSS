@@ -37,3 +37,5 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+## when you see this, it means it works correctly
